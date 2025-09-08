@@ -92,7 +92,7 @@ WHERE userIdentity_ARN LIKE '%i-%'  -- EC2 instances
    OR EventSource = 'rds.amazonaws.com'  -- RDS
    OR EventSource = 'lambda.amazonaws.com'  -- Lambda
    OR EventSource = 'ecs.amazonaws.com'  -- ECS containers
-   OR EventSource = 'eks.amazonaws.com'  -- Kubernetes
+   OR EventSource = 'eks.amazonaws.com'  -- Kubernetes ; More can be added for more complex scenarios`
 ORDER BY EventTime DESC;
 ```
 
