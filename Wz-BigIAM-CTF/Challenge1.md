@@ -28,6 +28,6 @@ $ aws s3 ls s3://thebigiamchallenge-storage-9979f4b/files/
 Then download it via `s3 cp`
 
 <img width="2798" height="682" alt="image" src="https://github.com/user-attachments/assets/c9533d98-ef44-4c32-87ed-664d61548574" />
-> used `--no-sign-request` to perform request anonymously, without signing it with AWS credentials.
 
+> used `--no-sign-request` to perform request anonymously, without signing it with AWS credentials.
 > Flag1
