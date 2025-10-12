@@ -101,3 +101,8 @@ Frustrated opened my kali and tried to use creds.
 
  > Worked!!
 
+### 4. Dumping S3:
+
+
+
+
