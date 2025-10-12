@@ -11,7 +11,7 @@ We are provided with :
 
 <img width="1529" height="328" alt="image" src="https://github.com/user-attachments/assets/0b9e1f0c-8497-4773-a307-3812e10c159b" />
 
-2. We can also view IAM policy
+2. We can also view Resource policy
 
 <img width="1543" height="612" alt="image" src="https://github.com/user-attachments/assets/bf35ec03-d5a6-4619-b6c2-4a15696c89ca" />
 
