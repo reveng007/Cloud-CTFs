@@ -22,6 +22,8 @@ Firstly we can see `cognito-sync:*` is there. May be we can find something (User
 
 > IdentityPoolId: us-east-1:b73cb2d2-0d00-4e77-8e80-f99d9c13da3b
 
+### Shameless Plugin: I have wrote a detailed blog on exploitation of AWS Cognito before (on AWS Cloud Goat), you can give it a go ^^ : [Blog](https://reveng007.github.io/blog/2024/01/29/CloudGat-AWS-Scenario-2-vulnerable_cognito-(Small-or-Moderate).html)
+
 Searched for `aws cognito` cli command, which can be used with `IdentityPoolId`
 1. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/create-identity-pool.html
 2. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/describe-identity.html
