@@ -103,6 +103,9 @@ Frustrated opened my kali and tried to use creds.
 
 ### 4. Dumping S3:
 
+<img width="2859" height="1403" alt="image" src="https://github.com/user-attachments/assets/41eb7a9d-7f03-4c8d-867e-25004073bca5" />
 
+<img width="736" height="116" alt="image" src="https://github.com/user-attachments/assets/969ee05b-ff76-4792-aa15-ef944acde6f9" />
 
+> Flag
 
