@@ -24,4 +24,5 @@ $ aws s3 ls s3://thebigiamchallenge-storage-9979f4b/files/
 Then download it via `s3 cp`
 
 <img width="2799" height="643" alt="image" src="https://github.com/user-attachments/assets/dccc459b-6323-4333-b8b8-599590af9df4" />
+
 > Flag1
