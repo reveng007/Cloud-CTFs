@@ -18,6 +18,8 @@ Lets' try to list files:
 $ aws s3 ls s3://thebigiamchallenge-admin-storage-abf1321/files/ --no-sign-request
 ```
 
+> `curl "https://s3.amazonaws.com/thebigiamchallenge-admin-storage-abf1321?prefix=files/"` can also do the job, as no authentication is required.
+
 <img width="2800" height="506" alt="image" src="https://github.com/user-attachments/assets/27418496-db92-48cf-b990-11883a85d875" />
 
 ```bash
