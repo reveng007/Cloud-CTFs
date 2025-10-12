@@ -35,6 +35,8 @@ Searched for `aws cognito` cli command, which can be used with `IdentityPoolId`
 4. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/describe-identity-pool.html
 5. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/get-id.html
 
+### 1. Enumeration 1:
+
 - Tried with `describe-identity-pool` as it has the option of passing `--identity-pool-id` :
 ```bash
 $ aws cognito-identity describe-identity-pool --identity-pool-id "us-east-1:b73cb2d2-0d00-4e77-8e80-f99d9c13da3b"
@@ -52,6 +54,8 @@ $ aws cognito-identity get-id --identity-pool-id "us-east-1:b73cb2d2-0d00-4e77-8
 <img width="1937" height="243" alt="image" src="https://github.com/user-attachments/assets/b9c4ab69-0204-463d-a168-5c54a1618ea7" />
 
 > "IdentityId": "us-east-1:157d6171-ee94-c66b-ed32-62dba3aa1b9b"
+
+### 2. Enumeration 2:
 
 Now, we can try `describe-identity` as it has the option of passing `--identity-id` :
 ```bash
