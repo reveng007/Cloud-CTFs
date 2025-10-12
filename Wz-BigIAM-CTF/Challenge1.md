@@ -10,7 +10,7 @@ We are provided with :
 
 <img width="2036" height="420" alt="image" src="https://github.com/user-attachments/assets/93ac9d54-0c29-4167-8412-539e054c5be2" />
 
-2. We can also view IAM policy
+2. We can also view Resource policy
 
 <img width="1204" height="921" alt="image" src="https://github.com/user-attachments/assets/c841109c-f849-4d98-a162-f4bad3f013d5" />
 
