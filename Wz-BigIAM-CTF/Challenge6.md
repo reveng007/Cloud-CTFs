@@ -20,11 +20,12 @@ We are provided with:
 
 It states that we have `sts:AssumeRoleWithWebIdentity` action permission on Principal `"Federated": "cognito-identity.amazonaws.com"` with a condition of `"cognito-identity.amazonaws.com:aud": "us-east-1:b73cb2d2-0d00-4e77-8e80-f99d9c13da3b"`.
 
-Meaning:
+Quick search on does this retieved id can mean:
+<img width="1755" height="651" alt="image" src="https://github.com/user-attachments/assets/b9bcfd2b-e1b7-4649-a1a7-7f751d14bdc2" />
+
+Meaning: \
 It states that we have `sts:AssumeRoleWithWebIdentity` action permission on Principal `"Federated": "cognito-identity.amazonaws.com"` with a condition of 
 `--identity-pool-id` being `us-east-1:b73cb2d2-0d00-4e77-8e80-f99d9c13da3b`.
-
-<img width="1755" height="651" alt="image" src="https://github.com/user-attachments/assets/b9bcfd2b-e1b7-4649-a1a7-7f751d14bdc2" />
 
 Let's proceed, similarly like Challenge 5:
 ```
