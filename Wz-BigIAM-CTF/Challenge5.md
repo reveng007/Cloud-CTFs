@@ -35,7 +35,8 @@ $ aws cognito-identity describe-identity-pool --identity-pool-id "us-east-1:b73c
 ```
 
 <img width="2812" height="408" alt="image" src="https://github.com/user-attachments/assets/4314d838-fade-44fd-9c2a-a77830a65cf6" />
-> OOps!!!
+
+> Oops!!!
 
 - Tried with `get-id` as it has the option of passing `--identity-pool-id` :
 ```bash
@@ -52,7 +53,8 @@ $ aws cognito-identity describe-identity --identity-id us-east-1:157d6171-ee94-c
 ```
 
 <img width="2797" height="313" alt="image" src="https://github.com/user-attachments/assets/a27a9dc1-55f9-4d49-8056-d32e8dab8af2" />
-> OOps!!!
+
+>  Oops!!!
 
 Up next to `get-credentials-for-identity` as it also has the option of passing `--identity-id` :
 ```bash
