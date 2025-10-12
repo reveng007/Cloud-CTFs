@@ -25,3 +25,5 @@ $ aws s3 cp s3://thebigiamchallenge-admin-storage-abf1321/files/flag-as-admin.tx
 ```
 
 <img width="2800" height="482" alt="image" src="https://github.com/user-attachments/assets/5cb069fc-5870-4e46-9ce0-51ee408ca5a5" />
+
+> Flag
