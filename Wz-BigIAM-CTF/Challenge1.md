@@ -1,5 +1,10 @@
 # Challenge 1:
 
+## Task
+We all know that public buckets are risky. But can you find the flag?
+
+---
+
 We are provided with :
 1. `aws cli` configured with assumed role.
 
