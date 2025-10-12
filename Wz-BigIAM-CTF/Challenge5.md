@@ -65,4 +65,27 @@ $ aws cognito-identity get-credentials-for-identity --identity-id us-east-1:157d
 
 > Worked!
 
+Let's export it!
+```
+$ export AWS_ACCESS_KEY_ID=ASIAR...
+$ export AWS_SECRET_ACCESS_KEY=/nJch/El5...
+$ export AWS_SESSION_TOKEN=IQoJb3JpZ2...
+```
+> The above approach didn't work!!
+
+### Tried via this [approach](https://docs.aws.amazon.com/cli/latest/reference/configure/set.html#examples)
+```
+$ aws configure set aws_access_key_id ASIAR...
+$ aws configure set aws_secret_access_key XA/D...
+$ aws configure set aws_session_token IQoJb3JpZ....
+```
+
+<img width="1228" height="213" alt="image" src="https://github.com/user-attachments/assets/9229eb83-e05c-4476-88e4-ea4351ba010f" />
+
+> This also didn't worked!
+
+Frustrated opened my kali and tried to use creds.
+<img width="2879" height="1522" alt="image" src="https://github.com/user-attachments/assets/11d31763-4cb9-48da-9c95-4b6bcca105ae" />
+
+ > Worked!!
 
