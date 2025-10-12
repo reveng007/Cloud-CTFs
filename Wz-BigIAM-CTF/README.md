@@ -4,5 +4,5 @@ The challenges were totally based on scenarios where you would be given differen
 
 1. Misconfigured Simple Query Service (sqs)
 2. Overly permissive S3 bucket Resource policy
-3. Abusing greedy Expansion of AWS `sns:Endpoint`
-4. Abusing AWS IDP (Cognito)
+3. Overly permissive AWS SNS Subscription Endpoint
+4. Misconfigured AWS IDP (Cognito)
